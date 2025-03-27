@@ -1,5 +1,5 @@
 import random
-siuts = ('Hearts' , 'Diamonds' , 'Spades' , 'Clubs')
+suits = ('Hearts' , 'Diamonds' , 'Spades' , 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'five', 'Six', 'Seven' , 'Eight' , 'Nine' , 'Ten' ,'Jack' , 'Queen' , 'King' ,'Ace')
 values = {'Two':2 , 'Three':3 , 'Four':4 , 'five':5 , 'Six':6 , 'Seven':7 , 'Eight':8 , 'Nine':9 , 'Ten':10 ,'Jack':11 , 'Queen':12 , 'King':13 ,'Ace':14}
 class Card:
@@ -16,7 +16,7 @@ class Card:
 class Deck:
     def __init__(self):
         self.all_cards = []
-        for suit in siuts:
+        for suit in suits:
             for rank in ranks:
                 # create the card object
                 created_card = Card(suit , rank)
